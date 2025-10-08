@@ -2,7 +2,7 @@
 
 body{
     background: #fff;
-    margin: 0 20px;
+    margin: 0;
     width: 100%;
     max-width: 100%;
     display: flex;
@@ -48,5 +48,6 @@ button{
     transition: all 0.3s ease;
 }
 .box02:hover{ background: #a9623f}
+
 
 
