@@ -183,8 +183,10 @@
                 for(let i=0; i<quiz[No-1].c.length; i++){
                     const btn=document.createElement("button");
                     btn.innerHTML=quiz[No-1].c[i];
-                    btn.className="box02";
-                    btn.scrollIntoView({behavior: "smooth"});
+                    if(isWindowsPlatform(){
+                        btn.className="box02";
+                        btn.scrollIntoView({behavior: "smooth"});
+                    }
                     btn.onclick= function(){
                         calculation(quiz[No-1].type, i);
                     }
@@ -207,8 +209,15 @@
             localStorage.setItem("user",user);
             window.location.href="result.html";
         }
+
+        function isWindowsPlatform() {
+            const platform = navigator.platform.toLowerCase();
+            return platform.includes('win');
+        }
+}
         window.onload=ShowQue;
     </script>
 
 </html>
+
 
