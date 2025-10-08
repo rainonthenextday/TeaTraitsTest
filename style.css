@@ -13,9 +13,20 @@ body{
     color: #000;
 }
 
-h1, h2, p{
+h1{
+    font-size: 180%;
     padding: 0 70px;
-    line-height: 1.5;
+    line-height: 1.25;
+}
+h2{
+    font-size: 150%;
+    padding: 0 70px;
+    line-height: 1.25;
+}
+p{
+    font-size: 120%;
+    padding: 0 70px;
+    line-height: 1.25;
 }
 a{
     color: #000;
@@ -48,6 +59,7 @@ button{
     transition: all 0.3s ease;
 }
 .box02:hover{ background: #a9623f}
+
 
 
 
